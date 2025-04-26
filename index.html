@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daraz- Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #f45b0f;
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 40px;
+    
+        }
+        .search-box h2 a{
+            text-align: right ;
+            color: white;
+        }
+
+        .search-box input {
+            padding: 8px;
+            width: 300px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('https://via.placeholder.com/1200x300?text=Big+Sale+on+Daraz+Clone') no-repeat center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .categories, .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .category, .product {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            width: 180px;
+            text-align: center;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+
+        .category:hover, .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img, .category img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Daraz"
+      agent-id="d04703bf-cae6-4f5a-bd3d-c16e70059b68"
+      language-code="en"
+    ></df-messenger>
+
+
+    <div class="navbar">
+        <h1>Daraz</h1>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <h2>
+                <a href="http://127.0.0.1:5500/login.html" >Login</a>
+                <a href="http://127.0.0.1:5500/signup.html" >Sign up</a> 
+                </h2>
+        </div>
+    </div>
+
+    <div>
+      <a href="" traget="_blank">
+        <img src="bannar.webp" alt="img" />
+      </a>
+      </div>
+
+    <div class="section">
+        <h2>Categories</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="photo-1567581935884-3349723552ca.jfif" alt="Mobiles">
+                <p>Mobiles</p>
+            </div>
+            <div class="category">
+                <img src="pexels-photo-1536619.jpeg" alt="Fashion">
+                <p>Fashion</p>
+            </div>
+            <div class="category">
+                <img src="images.jfif" alt="Beauty">
+                <p>Beauty</p>
+            </div>
+            <div class="category">
+                <img src="electronic.jpg" alt="Electronics">
+                <p>Electronics</p>
+            </div>
+            <div class="category">
+              <img src="electronic.jpg" alt="toys">
+              <p>Toys</p>
+          </div>
+            <div class="category">
+              <img src="3d.avif" alt="Printer">
+              <p>3D printer</p>
+          </div>
+          <div class="category">
+            <img src="dining.jfif" alt="din">
+            <p>Dinnig set</p>
+        </div>
+       
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Featured Products</h2>
+        <div class="products">
+
+          <div class="product">
+            <img src="pair.webp" alt="heel">
+            <p> Silicone Gel Heel Crack Protector </p>
+            <strong>RS 99</strong>
+        </div>
+            <div class="product">
+                <img src="mobile.webp" alt="Phone 1">
+                <p>Smartphone X1</p>
+                <strong>RS 50000</strong>
+            </div>
+            <div class="product">
+                <img src="shoes.jfif" alt="Shoes">
+                <p>Running Shoes</p>
+                <strong>Rs 1000</strong>
+            </div>
+            <div class="product">
+                <img src="headphones.jfif" alt="Headphones">
+                <p>Bluetooth Headphones</p>
+                <strong>RS 5000</strong>
+            </div>
+            <div class="product">
+                <img src="lipstick.jfif" alt="Lipstick">
+                <p>Matte Lipstick</p>
+                <strong>RS 800</strong>
+            </div>
+            <div class="product">
+              <img src="bag.webp" alt="bag">
+              <p> Eyes Zone Ladies Bags Shoulder Bags Cross Body Bags Latest Design Hand Bags For Girls</p>
+              <strong>RS 800</strong>
+          </div>
+          <div class="product">
+            <img src="air.webp" alt="Airpods">
+            <p>  Airpods_Pro Wireless Earbuds Bluetooth 5.0 Compatible with IOS and Android</p>
+            <strong>RS 1500</strong>
+        </div>
+         
+           
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Daraz Clone. All rights reserved.
+    </footer>
+
+</body>
+</html>
