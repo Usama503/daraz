@@ -84,14 +84,153 @@
         }
 
         footer {
-            background: #222;
-            color: white;
-            text-align: center;
+            background: white;
+            color: black;
+            text-align: left;
             padding: 15px 0;
             margin-top: 30px;
         }
-       
-    </style>
+
+        /* Footer */
+.mainfooter {
+    display:flex;
+    justify-content: center;
+}
+
+.footpanel {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin-top: 30px;
+}
+
+.country-section {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#pakistan {
+    background-image: url("pakistan.jpg");
+}
+
+#bangladesh {
+    background-image: url("bangla.png");
+}
+
+#sri-lanka {
+    background-image: url("srilanka.png");
+}
+
+#myanmar {
+    background-image: url("Myna.png");
+}
+
+#nepal {
+    background-image: url("nepal.png");
+}
+
+.country-image {
+    width:25px;
+    height:25px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.footpanel h4 {
+    color: rgb(248, 86, 6);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom:10px;
+    margin-top:30px;
+}
+
+.footpanel a {
+    display:block;
+    font-size: 0.9rem;
+    padding-top:5px
+}
+
+
+.countries-footer {
+    display:flex;
+    width:230px;
+    flex-wrap: wrap;
+}
+
+.country-section {
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.payment-method {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.payment-method img {
+    margin-right:5px;
+    margin-bottom: 5px;
+}
+
+.exclusive-deals {
+    display: flex;
+    flex-direction: column;
+}
+
+#daraz-shopping {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+ </style>
 </head>
 <body>
 
@@ -116,11 +255,19 @@
         </div>
     </div>
 
-    <div>
-      <a href="" traget="_blank">
-        <img src="bannar.webp" alt="img" />
-      </a>
-      </div>
+     <!-- Image Slider -->
+     <div id="slider">
+        <figure>
+            <img src="bannar.webp">
+            <img src="hero-section2.jpg">
+            <img src="hero-section3.jpg">
+            <img src="bannar.webp">
+            <img src="hero-section.jpg">
+        </figure>
+    </div>
+
+
+    
 
     <div class="section">
         <h2>Categories</h2>
@@ -200,9 +347,103 @@
            
         </div>
     </div>
-
+ 
     <footer>
-        &copy; 2025 Daraz Clone. All rights reserved.
+
+            <!-- Footer -->
+            <div class="mainfooter">
+                <div class="footpanel">
+                    <!-- Footer Panel 1 -->
+                    <div class="foot-section1">
+                        <h4>Customer Care</h4>
+                        <a>Help Center</a>
+                        <a>How to Buy</a>
+                        <a>Corporate & Bulk Purchasing</a>
+                        <a>Returns & Refunds</a>
+                        <a>Daraz Shop</a>
+                        <a>Contact Us</a>
+                        <a>Purchase Protection</a>
+                        <a>Daraz Pick up Points</a>
+                        <h4>Make Money With Us</h4>
+                        <a>Daraz University</a>
+                        <a>Sell on Daraz</a>
+                        <a>Join Daraz Affiliate Program</a>
+                    </div>
+                    <!-- Footer Panel 2 -->
+                    <div class="foot-section2">
+                        <h4>Daraz</h4>
+                        <a>About Us</a>
+                        <a>Digital Payments</a>
+                        <a>Daraz Donates</a>
+                        <a>Daraz Blog</a>
+                        <a>Terms & Conditions</a>
+                        <a>Privacy Policy</a>
+                        <a>NTN Number : 4012118-6</a>
+                        <a>STRN Number : 1700401211818</a>
+                        <a>Online Shopping App</a>
+                        <a>Online Grocery Shopping</a>
+                        <a>Daraz Exclusive</a>
+                    </div>
+                    <!-- Footer Panel 3 -->
+                    <div class="foot-section3">
+                        <div class="footarea1-s3">
+                            <h4>Daraz International</h4>
+                            <div class="countries-footer">
+                                <div class="country-section">
+                                    <div class="country-image" id="pakistan"></div>
+                                    <a>Pakistan</a>
+                                </div>
+                                <div class="country-section">
+                                    <div class="country-image" id="bangladesh"></div>
+                                    <a>Bangladesh</a>
+                                </div>
+                                <div class="country-section">
+                                    <div class="country-image" id="sri-lanka"></div>
+                                    <a>Sri Lanka</a>
+                                </div>
+                                <div class="country-section">
+                                    <div class="country-image" id="myanmar"></div>
+                                    <a>Myanmar</a>
+                                </div>
+                                <div class="country-section">
+                                    <div class="country-image" id="nepal"></div>
+                                    <a>Nepal</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footarea2-s3">
+                            <h4>Payment Methods</h4>
+                            <div class="payment-method">
+                                <img src="Cash on Delivery.png" width="50">
+                                <img src="Visa.png" width="50">
+                                <img src="MasterCard.png" width="50">
+                                <img src="EasyPaisa.png" width="50">
+                                <img src="HBL.png" width="50">
+                                <img src="Union Pay.png"50">
+                                <img src="Easy Monthly Installements.png" width="50">
+                                <img src="Daraz Wallet.png" width="50">
+                                <img src="JazzCash.png"50">
+                            </div>
+                        </div>
+                        <div class="footarea3-s3">
+                            <h4>Verified by</h4>
+                            <img src="Verified by.png" width="100">
+                        </div>
+                    </div>
+                    <!-- Footer Panel 4 -->
+                    <div class="foot-section4">
+                        <div class="exclusive-deals">
+                            <h4>Exclusive Deals and Offers!</h4>
+                            <img src="QR Code.png" width="220">
+                            <img src="Daraz-Happy-Shopping.png" id="daraz-shopping" width="220">
+                        </div>
+                        <div class="follow-panel">
+                            <h4>Follow Us</h4>
+                            <img src="facebook.png" width="220">
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
 
 </body>
